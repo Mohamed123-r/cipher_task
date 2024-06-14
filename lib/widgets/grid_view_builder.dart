@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
 import '../models/item_model.dart';
-import 'catagory_item.dart';
+import 'category_item.dart';
 
 class GridViewBuilder extends StatelessWidget {
   const GridViewBuilder({super.key});
@@ -35,8 +34,9 @@ class GridViewBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  GridView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
+shrinkWrap: true
+      ,
+
       itemCount: items.length,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
@@ -44,7 +44,7 @@ class GridViewBuilder extends StatelessWidget {
         mainAxisSpacing: 10,
         childAspectRatio: 0.7,
       ),
-      itemBuilder: (context, index) => Category_item(items: items[index]),
+      itemBuilder: (context, index) => CategoryItem(items: items[index]),
     );
   }
 }

@@ -1,8 +1,8 @@
 import 'package:cipher_task/models/item_model.dart';
 import 'package:flutter/material.dart';
 
-class Category_item extends StatelessWidget {
-  const Category_item({
+class CategoryItem extends StatelessWidget {
+  const CategoryItem({
     super.key,
     required this.items,
   });
