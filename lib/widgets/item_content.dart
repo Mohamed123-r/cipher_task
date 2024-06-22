@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../models/item_model.dart';
 
 class ItemContent extends StatelessWidget {
