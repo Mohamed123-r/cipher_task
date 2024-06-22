@@ -14,7 +14,7 @@ class CategoryItem extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
+        SizedBox(
           width: 200,
           height: 200,
           child: Card(
