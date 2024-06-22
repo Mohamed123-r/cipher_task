@@ -5,8 +5,9 @@ class ItemModel {
   final String name;
   final num price;
   final Color color;
+  final num size;
 
-  const ItemModel( {required this.price,
+  const ItemModel( {required this.size, required this.price,
     required this.image,
     required this.name,
     required this.color,
